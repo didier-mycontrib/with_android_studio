@@ -54,6 +54,7 @@ public class SimpleGetFetchTask extends AsyncTask<String, Void, String> {
 
             return new String(buffer);//EN RETOUR : TEXTE DE LA REPONSE
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         } finally {
             if (conn != null) {
